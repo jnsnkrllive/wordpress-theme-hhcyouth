@@ -1,0 +1,1073 @@
+/**
+ ** Theme Name: Holy Desert
+ ** Theme URI: http://hhcyouth.org
+ ** Version: 01
+ ** Description: Huron Hills Church Youth Ministry Style
+ ** Author: Karl Jansen
+ ** Author URI: http://karcor.com
+ **/
+
+
+/* Color Scheme
+Primary...
+#000000 = rgb(0,0,0) = Black
+#FFFFFF = rgb(255,255,255) = White
+#90C840 = rgb(144,200,64) = Wicked Green
+Secondary...
+#807800 = rgb(128,120,0) = Dirty Yellow
+#607068 = rgb(96,112,104) = Blueish Gray
+#402800 = rgb(64,40,0) = Dark Brown
+#C8B888 = rgb(200,184,136) = Sand
+#404040 = rgb(56,56,56) = Dark Gray
+Accent...
+#0000FF = rgb(0,0,255) = Blue
+#4068FF = rgb(64,104,255) = Royal Blue
+#800080 = rgb(128,0,128) = Purple
+#E8E8F8 = rgb(232,232,248) = Lavander
+#FF2400 = rgb(255,36,0) = Scarlet
+*/
+
+/* Font Family
+Primary...
+"Corbel", "Arial"
+Secondary...
+"Comic Sans MS", "Vendana"
+Last...
+serif
+*/
+
+
+/** Global
+****************************************************************/
+html,
+* html body {
+  margin-top: 0px;
+}
+
+body {
+  background-color: #90C840;
+  color: #000000;
+  display: block;
+  font-family: "Arial", "Vendana", serif;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  text-decoration: none;
+  vertical-align: middle;
+  word-spacing: normal;
+}
+
+img {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img.alignleft {
+  text-align: left;
+}
+
+img.center,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+img.alignright {
+  text-align: right;
+}
+
+
+/** General Classes
+****************************************************************/
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+
+/** Header
+****************************************************************/
+#header {
+  width: 892px;
+  height: 172px;
+  border: 4px solid #000000;
+  color: #607068;
+  font-family: "Corbel", "Vendana", serif;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#splashheader {
+  width: 892px;
+  height: 110px;
+  border: 4px solid #000000;
+  margin: 0px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  text-align: center;
+}
+
+#header span a {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000;
+  position: absolute;
+  left: 30px;
+  bottom: 15px;  
+}
+
+span#subheader {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-shadow: 0 0 0.2em #000, 0 0 0.2em #000;
+  position: absolute;
+  left: 45px;
+  bottom: 2px; 
+}
+
+
+/** Structure
+****************************************************************/
+#container {
+  -moz-border-radius-bottomright: 30px;
+  -moz-border-radius-bottomleft: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  -moz-box-shadow: 6px 6px 9px #000;
+  -webkit-box-shadow: 6px 6px 9px #000;
+  box-shadow: 6px 6px 9px #000;
+  width: 900px;
+  height: auto;
+  background-color: #FFFFFF;
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding: 0px;
+  vertical-align: top;
+}
+
+#content {
+  width: 630px;
+  height: auto;
+  float: left;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+#content-page {
+  width: 870px;
+  height: auto;
+  float: left;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+#splashtable {
+  text-align: center;
+}
+
+#splashtable table.splash {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
+
+#splashtable table.splash td {
+  width: 33%;
+  padding: 10px;
+  vertical-align: top;
+}
+
+#splashtable table.splash td a {
+  font-weight: bold;
+}
+
+
+/** Navigation
+****************************************************************/
+#sitenavbar {
+  width: 100%;
+  height: 30px;
+  background-color: #90C840;
+  border-bottom: 1px solid #FFFFFF;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+#sitenavlist {
+  list-style-type: none;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+#sitenavlist li {
+  width: 180px;
+  height: 30px;
+  display: inline;
+  float: left;
+  margin: 0px;
+  text-align: center;
+ }
+
+#sitenavlist li a {
+  color: #FFFFFF;
+  display: block;
+  font-family: "Corbel", "Arial", "Comic Sans MS", "Vendana", serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+#sitenavlist li a:link,
+#sitenavlist li a:active,
+#sitenavlist li a:visited {
+  font-size: 12px;
+  font-weight: 200;
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+#sitenavlist li a:hover {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 8px;
+}
+
+div.menu,
+#pagenavbar {
+  width: 100%;
+  height: 30px;
+  background-color: #000000;
+  border-bottom: 0px solid #FFFFFF;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.menu ul,
+#pagenavlist {
+  list-style-type: none;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+div.menu li,
+#pagenavlist li {
+  width: 120px;
+  height: 30px;
+  display: inline;
+  float: left;
+  margin: 0px;
+  text-align: center;
+ }
+
+div.menu li a,
+#pagenavlist li a {
+  color: #FFFFFF;
+  display: block;
+  font-family: "Corbel", "Arial", "Comic Sans MS", "Vendana", serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+div.menu li a:link,
+div.menu li a:active,
+div.menu li a:visited,
+#pagenavlist li a:link,
+#pagenavlist li a:active,
+#pagenavlist li a:visited {
+  font-size: 12px;
+  font-weight: 200;
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+div.menu li a:hover,
+#pagenavlist li a:hover {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 0px;
+  padding-bottom: 8px;
+}
+
+.navigation {
+  font-size: 0.8em;
+  height: 0.9em;
+  margin: 20px 0 5px 0;
+}
+
+div.alignleft a,
+div.alignright a {
+  color: #404040;
+}
+
+
+/** Text
+****************************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  font-family: "Arial", "Vendana", serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 11px;
+  margin-right: 0px;
+  margin-bottom: 11px;
+  margin-left: 0px;
+  text-decoration: none;
+  vertical-align: middle;
+  word-spacing: normal;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
+}
+
+h4 {
+  font-size: small;
+}
+
+h5 {
+  font-size: x-small;
+}
+
+h6 {
+  font-size: xx-small;
+}
+
+
+/** Links
+****************************************************************/
+a:link,
+a:active,
+a:visited,
+a:hover {
+  color: #404040;
+  font-family: "Arial", "Times New Roman", "Vendana", "Arial";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+  text-transform: none;
+  word-spacing: normal;
+}
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#splashtable a:link,
+#splashtable a:active,
+#splashtable a:visited {
+  color: #404040;
+}
+
+#splashtable a:hover {
+  color: #404040;
+}
+
+
+/** Lists
+****************************************************************/
+ol,
+ul,
+li {
+  font-family: "Arial", "Vendana", serif;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+ul.disc {
+  list-style-type: disc;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+
+ul.none {
+  list-style-type: none;
+}
+
+ol.decimal {
+  list-style-type: decimal;
+}
+
+ol.uroman {
+  list-style-type: upper-roman;
+}
+
+ol.lalpha {
+  list-style-type: lower-alpha;
+}
+
+li {
+  text-align: left;
+}
+
+
+/** Footer
+****************************************************************/
+#footer {
+  width: 720px;
+  height: auto;
+  border-top: 1px solid #000000;
+  display: block;
+  font-size: small;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#footer p {
+  display: block;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 3px;
+  margin-bottom: 3px; 
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer h4 {
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+
+/** Extras
+****************************************************************/
+
+
+/** Extras (Post)
+****************************************************************/
+div.post {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+div.post-title h2, 
+div.post-title h2 a {
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+div.post-title h2 a{
+  color: #404040;
+}
+
+div.post-metadata {
+  font-size: small;
+  border-left: 1px solid #000000;
+  padding-left: 3px;
+}
+
+div.post-metadata a {
+  color: #404040;
+}
+
+.post-metadata-author {
+  display: none;
+  visibility: hidden;
+}
+
+div.post-entry {
+  font-size: medium;
+  border-bottom: 1px solid #000000;
+}
+
+div.post-entry-page {
+  font-size: medium;
+}
+
+div.post-entry a {
+  color: #404040;
+}
+
+
+/** Extras (Comments)
+****************************************************************/
+.gravatar {
+  float: right;
+}
+
+#comments {
+  margin: 0px;
+  padding: 0px;
+  font-size: medium;
+}
+
+#comments a {
+  color: #404040;
+}
+
+#comments ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#comments ol li {
+  border-bottom: 1px solid #ccc;
+  line-height: 18px;
+  margin: 0px;
+  padding: 10px 0 10px;
+}
+
+#comments textarea {
+  width: 630px;
+}
+
+
+/** Extras (Sidebar)
+****************************************************************/
+#sidebar {
+  float: left;
+  padding: 0px 15px 20px 15px;
+  width: 210px;
+}
+
+div.widget-area {
+  width: 100%;
+  display: block;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin-top: 20px;
+}
+
+div.widget-area a {
+  color: #404040;
+}
+
+div.widget-area ul.none {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.widget-area ul {
+  font-size: 12px;
+  list-style: none;
+  margin: 0px;
+  padding: 0 15px 0 20px;
+}
+
+div.widget-area ul li ul {
+  margin: 0px;
+  padding: 0 0 0 2px;
+}
+	
+div.widget-area ul li ul li ul {
+  margin: 6px 0 -12px 0;
+  padding: 0 0 0 2px;
+}
+
+div.widget-area ul li {
+  line-height: 15px;
+  margin: 0px 0px -1px 0px;
+  padding: 3px 0 3px 0px;
+}
+		
+div.widget-area ul li a {
+  background: url(images/arrow.gif) no-repeat center left;
+  color: #404040;
+  font-weight: bold;
+  padding: 0 0 0 6px;
+  text-decoration: none;
+}
+
+div.widget-area ul li a:hover {
+  color: #404040;
+  text-decoration: underline;
+}
+
+div.widget-area h2 {
+  color: #000000;
+  font: bold 1.2em "arial", helvetica, sans-serif;
+  line-height: 0.6em;
+  padding: 6px 0 0 0px;
+}
+
+div.widget-area h3 {
+  font: normal 1.4em/1.1em "arial", helvetica, sans-serif;
+  padding: 0 0 3px;
+}
+
+div.widget-area div  {
+  text-align: center;
+}
+
+
+/** Extras (Widget - Search Form)
+****************************************************************/
+form#searchform {
+  text-align: center;
+}
+
+input#s {
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  width: 180px;
+  height: 20px;
+  border: 1px solid #FF2400;
+  padding: 3px 6px 3px 6px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/** Extras (Widget - WP Calendar)
+****************************************************************/
+#wp-calendar {
+  width: 100%;
+}
+
+#wp-calendar caption {
+  color: #222;
+  font-size: 1.0em;
+  font-weight: bold;
+  padding: 0px;
+  text-align: center;
+}
+
+#wp-calendar thead {
+  font-size: 12px;
+}
+
+#wp-calendar thead th {
+  color: #222;
+  height: 15px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#wp-calendar tbody {
+  color: #aaa;
+}
+
+#wp-calendar tbody tr {
+  line-height: 23px;
+}
+
+#wp-calendar tbody td {
+  background: #f5f5f5;
+  border: 1px solid #fff;
+  padding: 2px 0 2px 0px;
+  text-align: center;
+}
+
+#wp-calendar tbody td a {
+  color: #404040;
+  font-weight: bold;
+}
+
+#wp-calendar tbody .pad {
+  background: none;
+}
+
+#wp-calendar tfoot #prev a,
+#wp-calendar tfoot #next a {
+  color: #404040;
+  font-size: 15px;
+}
+
+
+/** Extras (Plugin - Event Calendar)
+****************************************************************/
+/* This style is defined within the settings of the Calendar Plugin */
+/*
+
+.calendar-table {
+  border: none;
+  font-family: "Arial", "Vendana", serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.calendar-date-switcher,
+.calendar-heading,
+.normal-day-heading,
+.weekend-heading {
+  background-color: #E8E8F8;
+  border: 1px solid #C8B888;
+  color: #402800;
+  font-size: 0.9em;
+  height: 30px;
+  text-align: center;
+}
+
+.calendar-date-switcher form {
+  margin: 0px;
+  padding: 0px;
+}
+
+.calendar-date-switcher select {
+  background-color: #FFFFFF;
+  border: 1px solid #402800;
+  color: #607068;
+  margin-right: 4px;
+}
+
+.calendar-date-switcher input {
+  background-color: #FFFFFF;
+  border: 1px solid #402800;
+  color: #807800;
+  font-weight: bold;
+}
+
+.calendar-prev,
+.calendar-next {
+  font-size: 0.9em;
+  text-align: center;
+  width: 25%;
+}
+
+.calendar-month {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  width: 50%;
+}
+
+.normal-day-heading,
+.weekend-heading {
+  width: 120px;
+  font-weight: bold;
+}
+
+.weekend-heading,
+span.weekend {
+  color: #FF2400;
+}
+
+.day-with-date,
+.day-without-date,
+.current-day {
+  max-width: 120px;
+  width:120px;
+  height: 80px;
+  border: 1px solid #E8E8F8;
+  padding: 1px;
+  text-align: left;
+  vertical-align: text-top;
+  word-wrap: break-word;
+}
+
+.day-with-date span,
+.current-day span {
+  font-weight: bold;
+}
+
+.no-events {
+}
+
+.current-day {
+  background-color: #E8E8F8;
+}
+
+span.event {
+  font-size: 0.75em;
+}
+
+.calnk a,
+.calnk a:hover,
+.calnk a:visited {
+  border-bottom: 1px dotted #000000;
+  color: #000000;
+  text-decoration: none;
+}
+
+.calnk a:hover {
+  background-position: 0 0;
+}
+
+.calnk a span {
+  display: none;
+}
+
+.calnk a:hover span {
+  background: #4068FF;
+  border: 12px solid #4068FF;
+  color: #000000;
+  display: block;
+  line-height: 1.2em;
+  font-size: 0.9em;
+  font-weight: normal;
+  margin: 0px; 
+  padding: 0px; 
+  position: absolute;
+  z-index: 100;
+  width: 216px;
+}
+
+.calnk a:hover span span.event-title {
+  max-width: 216px;
+  border: 0px solid #FFFFFF;
+  display: inline-block !important;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 1px;
+  padding: 0px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.calnk a:hover span span.event-title-break {
+  width: 216px;
+  height: 2px;
+  background-color: #000000;
+  border: none;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.calnk a:hover span span.event-content-break {
+  width: 216px;
+  height: 1px;
+  background-color: #000000;
+  border: none;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.page-upcoming-events {
+  font-size: 80%;
+}
+
+.page-todays-events {
+  font-size: 80%;
+}
+
+.cat-key {
+  border: 1px solid #402800;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.kjo-link {
+  height: 0px;
+  font-size:0.75em;
+  text-align:center;
+  visibility: hidden !important:
+}
+
+div.widget-area div#upcoming-events ul li {
+  background: none;
+  color: #807800;
+  font-weight: bold;
+  padding: 0 0 0 6px;
+  text-decoration: none;
+}
+
+div.widget-area div#upcoming-events ul li ul li {
+  padding: 0 0 3px 6px;
+  font-weight: normal;
+}
+
+div.widget-area div#upcoming-events ul li a {
+  background: none !important;
+  padding: 0px !important;
+  color: #807800;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+*/
+
+
+/** Extras (Widget - Contact Form)
+****************************************************************/
+.wpcf7-form {
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: #E8E8F8;
+  border: 4px solid #000000;
+  float: right;
+  margin: 0 0 0 8px;
+  padding: 0px;
+  width: 420px;
+}
+
+.wpcf7-form table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  background-color: #E8E8F8;
+  border: none;
+  border-collapse: collapse;
+  color: #000000;
+  margin: 15px auto 15px auto;
+  padding: 0px;
+  width: 360px;
+}
+
+.wpcf7-form table tr.border-top {
+  border-top: 1px solid #4068FF;
+}
+
+.wpcf7-form table tr.border-bot {
+  border-bottom: 1px solid #4068FF;
+}
+
+.wpcf7-form table td {
+  min-width: 180px;
+  border-collapse: collapse;
+  font-family: "Corbel", "Arial", "Comic Sans MS";
+  font-size: 1.0em;
+  font-weight: bold;
+  margin: 0px;
+  padding: 4px 0px 4px 0px;
+}
+
+.wpcf7-form table td.input {
+  text-align: center !important;
+}
+
+.wpcf7-form table td.label {
+  text-align: right !important;
+}
+
+.wpcf7-form input {
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #FF2400;
+  width: 150px;
+  height: 24px;
+  background-color: #FFFFFF;
+  font-family: "Corbel", "Arial", "Comic Sans MS";
+  font-size: 0.8em;
+  padding: 3px 6px 3px 6px;
+}
+
+.wpcf7-form textarea {
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #FF2400;
+  width: 330px;
+  height: 120px;
+  background-color: #FFFFFF;
+  font-family: "Arial", "Comic Sans MS";
+  font-size: 0.8em;
+  padding: 3px 6px 3px 6px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input.wpcf7-submit {
+  width: 120px;
+  height: 40px;
+  background-color: #E8E8F8;
+  border: 2px solid #000000;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 4px;
+}
+
+img.wpcf7-captcha-captcha-311 {
+  border: 1px solid #000000;
+  margin-bottom: 2px;
+  vertical-align: text-bottom;
+}

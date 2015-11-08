@@ -1,0 +1,318 @@
+/**
+ ** This is a modified wppa_style.css file to match the Holy Desert theme.
+ **/
+
+
+/* Color Scheme
+Primary...
+#000000 = rgb(0,0,0) = Black
+#FFFFFF = rgb(255,255,255) = White
+#90C840 = rgb(144,200,64) = Wicked Green
+Secondary...
+#807800 = rgb(128,120,0) = Dirty Yellow
+#607068 = rgb(96,112,104) = Blueish Gray
+#402800 = rgb(64,40,0) = Dark Brown
+#C8B888 = rgb(200,184,136) = Sand
+#404040 = rgb(56,56,56) = Dark Gray
+Accent...
+#0000FF = rgb(0,0,255) = Blue
+#4068FF = rgb(64,104,255) = Royal Blue
+#800080 = rgb(128,0,128) = Purple
+#E8E8F8 = rgb(232,232,248) = Lavander
+#FF2400 = rgb(255,36,0) = Scarlet
+*/
+
+/* Font Family
+Primary...
+"Corbel", "Arial"
+Secondary...
+"Comic Sans MS", "Vendana"
+Last...
+serif
+*/
+
+
+/** Global
+****************************************************************/
+.wppa-img {  /* cover and popup photo */
+  background-color: #FFFFFF;
+}
+
+.wppa-popup-frame {
+  position: absolute;
+}
+
+.wppa-popup {
+  background-color: #FFFFFF;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #888;
+  border-bottom: 1px solid #888;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.imagetitle,
+.imagedesc {  /* full size photo */
+  cursor: default;
+  text-align: center;
+}
+
+
+/** General Classes
+****************************************************************/
+.speed0,
+.startstop,
+.speed1,
+.prev-arrow,
+.next-arrow,
+.arrow {
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/** Structure
+****************************************************************/
+.wppa-box {  /* all boxes */
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border-thickness: 1px;
+  margin: 8px 0 8px 0;
+  padding: 2px 6px 2px 6px;
+}
+
+.wppa-mini-box {  /* all boxes */
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border-thickness: 1px;
+}
+
+.wppa-alt,
+.wppa-even {  /* boxes in a list, like album covers */
+  background-color: #E8E8F8;
+  border-color: #E8E8F8;
+}
+
+.albumlist,
+.thumblist {  /* wrapper for albums, and thumbnails when displayed like albums */
+  clear: both;
+  width: 870px;
+}
+
+.albumlist .album,
+.thumblist .thumb {  /* wrapper for albums, and thumbnails when displayed like albums */
+  clear: both;
+  float: left;
+  padding: 5px;
+  margin: 5px 30px 5px 30px !important;
+  text-align: left;
+  width: 800px !important;
+}
+
+.coverphoto-frame,
+.thumbphoto-frame {  /* wrapper for coverphoto background */
+}
+
+.coverphoto-frame .image,
+.thumbphoto-frame .image {  /* coverphoto */
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: none;
+  border-radius: 3px;
+  margin: 0;
+  padding: 4px;
+  position: relative;
+}
+
+.covertext-frame {  /* wrapper for covertext */
+  width: 540px !important;
+}
+
+.thumbnail-area {  /* wrapper for thumbnail area */
+  -moz-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  clear: both;
+  margin: 5px 30px 5px 30px;
+  position: relative;
+  padding: 5px;
+  padding: 7px 0 7px 7px;
+  width: 800px !important;
+}
+
+.thumbnail-frame {  /* wrapper for thumbnail background */
+  background-color: transparent;
+  display: inline;
+  float: left;
+  overflow: hidden;
+}
+
+.thumbnail-area .thumbnail-frame {  /* specific for album page displaying all thumbnails */
+  width: 100px !important;
+  height: 110px !important;
+  background-color: transparent;
+  display: inline;
+  float: left;
+  margin: 0px !important;
+  padding: 4px 17px 4px 16px !important;
+  overflow: hidden;
+}
+
+
+/** Navigation
+****************************************************************/
+.prev {
+}
+
+.next {
+}
+
+.wppa-nav {
+  background-color: #E8E8F8;
+  border-color: #E8E8F8;
+}
+
+.bc-pname {  /* photoname in breadcrumb */
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.filmwindow {
+  margin: 0px auto 0px auto !important;
+  padding: 0px;
+}
+
+
+/** Text
+****************************************************************/
+.wppa-black,
+.wppa-black:hover {  /* default text attributes */
+  color: #000000;
+  cursor: default;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.wppa-title {  /* album name */
+  clear: none;
+  margin: 0;
+  padding: 0;
+}
+
+.album .description {  /* album description */
+  min-height: 45px;
+  margin-bottom: 16px;
+}
+
+.wppa-title,
+.wppa-fulltitle,
+.wppa-fulldesc,
+.wppa-nav-text,
+.wppa-box-text,
+.wppa-thumb-text {  /* fonts used in wppa boxes */
+  font-family: "Arial", "Vendana", serif;
+}
+
+.wppa-thumb-text {  /* text under thumbnail image */
+  font-size: 10px;
+  text-align: center;
+}
+
+.wppa-nav-text {
+  text-align: left;
+}
+
+
+/** Extras
+****************************************************************/
+
+
+/** Extras (Slideshow)
+****************************************************************/
+.wppa-container {
+  text-align: center;
+}
+
+.slide-frame {
+  margin: 0px auto 0px auto !important;
+}
+
+.theslide {
+  margin: auto;
+  vertical-align: middle;
+}
+
+div.slideshow_widget div {
+  width: 210px !important;
+  height: 180px !important;
+}
+
+.widget-area .wppa-container {
+  width: 100% !important;
+  height: 180px !important;
+}
+
+.widget-area .slide-frame {
+  width: 180px !important;
+  height: 180px !important;
+}
+
+.widget-area .theslide {
+  height: auto !important;
+  position: absolute;
+}
+
+.post-entry-page .wppa-container {
+  width: 100% !important;
+  height: 450px !important;
+}
+
+.post-entry-page .slide-frame {
+  width: 450px !important;
+  height: 450px !important;
+}
+
+.theimg {
+  display: block;
+}
+
+.big {
+  display: block;
+  margin: 0px auto;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  position: relative;
+}
+
+.wppa-arrow {
+  color: black;
+}
+
+.wideentry .slide-frame {
+  padding: 0;
+}
+
+
+/** Extras (Widget - Photo Album)
+****************************************************************/
+.wppa-widget {
+}
+
+.wppa-widget-text {
+  margin: 5px;
+  text-align: center;
+}

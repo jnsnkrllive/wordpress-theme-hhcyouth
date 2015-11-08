@@ -1,0 +1,200 @@
+.calendar-table {
+  border: none;
+  font-family: "Arial", "Vendana", serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.calendar-date-switcher,
+.calendar-heading,
+.normal-day-heading,
+.weekend-heading {
+  background-color: #E8E8F8;
+  border: 1px solid #C8B888;
+  color: #402800;
+  font-size: 0.9em;
+  height: 30px;
+  text-align: center;
+}
+
+.calendar-date-switcher form {
+  margin: 0px;
+  padding: 0px;
+}
+
+.calendar-date-switcher select {
+  background-color: #FFFFFF;
+  border: 1px solid #402800;
+  color: #607068;
+  margin-right: 4px;
+}
+
+.calendar-date-switcher input {
+  background-color: #FFFFFF;
+  border: 1px solid #402800;
+  color: #807800;
+  font-weight: bold;
+}
+
+.calendar-prev,
+.calendar-next {
+  font-size: 0.9em;
+  text-align: center;
+  width: 25%;
+}
+
+.calendar-month {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  width: 50%;
+}
+
+.normal-day-heading,
+.weekend-heading {
+  width: 120px;
+  font-weight: bold;
+}
+
+.weekend-heading,
+span.weekend {
+  color: #FF2400;
+}
+
+.day-with-date,
+.day-without-date,
+.current-day {
+  max-width: 120px;
+  width:120px;
+  height: 80px;
+  border: 1px solid #E8E8F8;
+  padding: 1px;
+  text-align: left;
+  vertical-align: text-top;
+  word-wrap: break-word;
+}
+
+.day-with-date span,
+.current-day span {
+  font-weight: bold;
+}
+
+.no-events {
+}
+
+.current-day {
+  background-color: #E8E8F8;
+}
+
+span.event {
+  font-size: 0.75em;
+}
+
+.calnk a,
+.calnk a:hover,
+.calnk a:visited {
+  border-bottom: 1px dotted #000000;
+  color: #000000;
+  text-decoration: none;
+}
+
+.calnk a:hover {
+  background-position: 0 0;
+}
+
+.calnk a span {
+  display: none;
+}
+
+.calnk a:hover span {
+  background: #4068FF;
+  border: 12px solid #4068FF;
+  color: #000000;
+  display: block;
+  line-height: 1.2em;
+  font-size: 0.9em;
+  font-weight: normal;
+  margin: 0px; 
+  padding: 0px; 
+  position: absolute;
+  z-index: 100;
+  width: 216px;
+}
+
+.calnk a:hover span span.event-title {
+  max-width: 216px;
+  border: 0px solid #FFFFFF;
+  display: inline-block !important;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 1px;
+  padding: 0px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.calnk a:hover span span.event-title-break {
+  width: 216px;
+  height: 2px;
+  background-color: #000000;
+  border: none;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.calnk a:hover span span.event-content-break {
+  width: 216px;
+  height: 1px;
+  background-color: #000000;
+  border: none;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.page-upcoming-events {
+  font-size: 80%;
+}
+
+.page-todays-events {
+  font-size: 80%;
+}
+
+.cat-key {
+  border: 1px solid #402800;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.kjo-link {
+  height: 0px;
+  font-size:0.75em;
+  text-align:center;
+}
+
+div.widget-area div#upcoming-events ul li {
+  background: none;
+  color: #807800;
+  font-weight: bold;
+  padding: 0 0 0 6px;
+  text-decoration: none;
+}
+
+div.widget-area div#upcoming-events ul li ul li {
+  padding: 0 0 3px 6px;
+  font-weight: normal;
+}
+
+div.widget-area div#upcoming-events ul li a {
+  background: none !important;
+  padding: 0px !important;
+  color: #807800;
+  font-weight: normal;
+  text-decoration: none;
+}
